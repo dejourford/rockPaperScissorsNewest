@@ -1,0 +1,136 @@
+body {
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    font-family: fantasy, sans-serif;
+}
+
+img {
+    height: 150px;
+}
+
+
+.header , 
+.scoreboard,
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    font-size: 42px;
+    color: white;
+}
+
+footer {
+    color: black;
+    font-size: 24px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 68px;
+    padding: 44px;
+}
+
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.5);
+  }
+
+#rock:active {
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+
+#paper:active {
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+
+#scissors:active {
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+
+.buttons span {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.scoreboard {
+    font-size: 64px;
+    padding: 10px;
+}
+
+.scoreboard span {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: monospace, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: red;
+}
+
+.cpuScoreBoard,
+.userScoreBoard {
+    border: 5px solid black;
+    width: 100px;
+    display: flex;
+}
+
+.cpuScoreBoard,
+.userScoreBoard, .span {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color:white;
+}
+
+ 
+.runningScore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    color:black;
+    padding: 20px;
+}
+
+.resetBtnContainer {
+    display: flex;
+    justify-content: center;    
+}
+
+.resetBtn {
+    font-size: 24px;
+    border: 2px solid black;
+   cursor:pointer; 
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,29 +9,68 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
+
 <body>
-    
-    <!-- scoreboard -->
-    <div class="scoreboard">
-        <div class="cpuScoreBoard">0</div>
-        <div class="userScoreBoard">0</div>
-    </div>
 
-    <!-- main content with selectable options -->
-    <div class="container">
+    <main>
+        <div class="container">
+            
+            <div class="resetBtnContainer">
+                <!-- reset score button -->
+                <button class="resetBtn">Reset</button>
+            </div>
 
-        <div class="header">SELECT YOUR WEAPON!</div>
 
-        <img src="images/rock.png" alt="rock">
-        <span>ROCK</span>
-        <img src="images/paper.png" alt="paper">
-        <span>PAPER</span>
-        <img src="images/scissors.png" alt="scissors">
-        <span>SCISSORS</span>
+            <!-- scoreboard -->
+            <div class="scoreboard">
+            
 
-    </div>
+                <!-- cpu score board -->
+                <div class="cpuScoreBoard">
+                    <div class="runningScore">0</div>
+                    <span>Computer</span>
+                </div>
+                
+                    <!--user score board  -->
+                <div class="userScoreBoard">
+                    <div class="runningScore">0</div>
+                    <span>User</span>
+                </div>
+            
+            </div>
 
+            <!-- button header -->
+            <div class="header">
+                <span>SELECT YOUR WEAPON!</span>
+            </div>
+
+        
+        
+
+            <!-- button options -->
+            <div class="buttons">
+
+                <div id="rock" class="hvr-grow">
+                    <img src="images/rock.png" alt="rock">
+                    <span>ROCK</span>
+                </div>
+
+                <div id="paper" class="hvr-grow">
+                    <img src="images/paper.png" alt="paper">
+                    <span>PAPER</span>
+                </div>
+
+
+                <div id="scissors" class="hvr-grow">
+                    <img src="images/scissors.png" alt="scissors">
+                    <span>SCISSORS</span>
+                </div>
+
+            </div>
+        </div>
+    </main>
     <footer>2022 &copy; De'Jour Ford </footer>
 
 </body>
+
 </html>
