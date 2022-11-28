@@ -15,6 +15,8 @@ resetBtn.addEventListener('click', () => {
     document.querySelector('#cpuScore').textContent = cpuScore
     userScore = 0
     document.querySelector('#userScore').textContent = userScore
+    resultMessage.textContent = 'You have reset the board.'
+    message.textContent = ""
 })
 
 
